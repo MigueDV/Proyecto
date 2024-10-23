@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/cocogoose-classic-trial" rel="stylesheet">      
+    <title>Tiendas Mass</title>
+</head>
+
+<style>
+    @import url('https://fonts.cdnfonts.com/css/cocogoose-classic-trial');
+</style>
+
+<body>
+    <main>
+        <section class="hero">
+
+            <div class="navbar">
+                
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/assets/images/mass_logo.webp" alt="Mass Logo" width="150">
+                    </a>
+                </div>
+
+                <nav>
+                    <a href="conoceme.html">Conóceme</a>
+                    <a href="#">Precios Mass</a>
+                    <a href="ubicanos.html">Ubícame</a>
+                    <a href="#">Productos</a>
+                    <a href="#">Trabaja conmigo</a>
+                </nav>
+                <a href="#" class="cta-button">ALQUILA TU LOCAL</a>
+            </div>
+            <div class="texto">
+                <h2>Hola soy tienda Mass</h2>
+                <p>Ofrecemos los mejores servicios para ti.</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+<script>
+    window.addEventListener("scroll", function() {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > 100) { // Ajusta el valor según cuánto quieres que tarde en pegarse
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    });
+</script>
+
+</html>

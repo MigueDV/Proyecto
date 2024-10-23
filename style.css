@@ -6,6 +6,8 @@
                 
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -15,10 +17,10 @@ body {
     width: 70.7%; /* Ocupa el ancho total de la pantalla */
     background-color: #FFD700; /* Color de fondo amarillo */
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    /* z-index: 1000; Asegura que la barra esté sobre otros elementos */
+    z-index: 1000;
     border-radius: 20px;
     transition: transform 0.5s ease, top 0.5s ease; /* Transición suave */
     transform: translateY(30px); /* Desplazamiento inicial hacia abajo */
@@ -28,10 +30,14 @@ body {
     transform: translateY(0); /* Se alinea al top cuando es sticky */
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .navbar nav a {
     font-family: 'Cocogoose Classic Trial';
     font-size: 20px;
-    margin: 0 15px;
+    margin: 0 40px;
     text-decoration: none;
     color: #082EB7;
     font-weight: 200;
@@ -42,20 +48,30 @@ body {
 }
 
 .cta-button {
-    background-color: #0044cc; /* Azul del botón */
+    font-family: 'Cocogoose Classic Trial';
+    letter-spacing: -0.5px;
+    font-size: 14px;
+    margin: 0 10px;
+    background-color: #082EB7; /* Azul del botón */
     color: white;
+    border-radius: 20px;
     padding: 10px 20px;
-    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     margin-top: 0px; /* Añade un margen superior para evitar que el contenido quede debajo del menú */
 }
 
-
-.hero {
+.hero{
+    background-color: #0044cc;
+}
+.texto {
     justify-content: space-between;
     align-items: center;
     background-color: #0044cc;
@@ -66,21 +82,12 @@ main {
     align-items: center;
 }
 
-.hero img {
+.texto img {
     width: 300px;
 }
 
-.hero h1 {
+.texto h1 {
     font-size: 2.5em;
-}
-
-.cta-button {
-    background-color: #0044cc;
-    color: #edeff2;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 20px;
 }
 
 footer {
