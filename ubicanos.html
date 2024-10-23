@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/cocogoose-classic-trial" rel="stylesheet">  
+    <title>Tiendas Mass</title>
 </head>
-<body>
-    <header>
-        <h1>Mass</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="conoceme.html">Conóceme</a></li>
-                <li><a href="ubicanos.html">Ubícanos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
+<style>
+    @import url('https://fonts.cdnfonts.com/css/cocogoose-classic-trial');
+</style>
+
+<body>
+   
     <main>
+        
+        <section class="navbar">
+            <div class="logo">
+                <img src="/assets/images/mass_logo.webp" alt="Mass Logo" width="150">
+                <link rel="stylesheet" href="/styles.css">
+            </div>
+            <nav>
+                <a href="conoceme.html">Conóceme</a>
+                <a href="#">Precios Mass</a>
+                <a href="ubicanos.html">Ubícame</a>
+                <a href="#">Productos</a>
+                <a href="#">Trabaja conmigo</a>
+            </nav>
+            <a href="#" class="cta-button">Alquila tu local</a>
+        </section>
+
         <section class="hero">
             <h2>Hola soy tienda Mass</h2>
             <p>Ofrecemos los mejores servicios para ti.</p>
         </section>
-
+        
         <section class="mapa">
             <h2>Mapa</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31212.48018668121!2d-77.05891766523438!3d-12.073764199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9bdbeebdea1%3A0x99765cffa0a2f45d!2sTienda%20Mass!5e0!3m2!1ses-419!2spe!4v1729039159195!5m2!1ses-419!2spe" 
@@ -38,10 +49,92 @@
             <p>Ofrecemos los mejores servicios para ti.</p>
         </section>
 
-    </main>
+        <section class="hero2">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
 
+        <section class="hero3">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero4">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero5">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero6">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero7">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero8">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero9">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero10">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero11">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero12">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero13">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero14">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+
+        <section class="hero15">
+            <h2>Hola soy tienda Mass</h2>
+            <p>Ofrecemos los mejores servicios para ti.</p>
+        </section>
+    
+    </main>
+    
     <footer>
-        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+        <p> 2024 Tiendas Mass</p>
     </footer>
+
 </body>
+
+<script>
+    window.addEventListener("scroll", function() {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > 100) { // Ajusta el valor según cuánto quieres que tarde en pegarse
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    });
+</script>
 </html>

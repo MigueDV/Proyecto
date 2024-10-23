@@ -3,16 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+                
 body {
     font-family: Arial, sans-serif;
 }
 
 .navbar {
-    position: fixed; /* Fija la barra de navegación */
+    position: sticky; /* Fija la barra de navegación */
     top: 0; /* La coloca en la parte superior */
-    left: 0;
-    width: 100%; /* Ocupa el ancho total de la pantalla */
+    left: 273px;
+    width: 70.7%; /* Ocupa el ancho total de la pantalla */
     background-color: #FFD700; /* Color de fondo amarillo */
     display: flex;
     /* justify-content: space-between; */
@@ -20,13 +20,25 @@ body {
     padding: 20px 20px;
     /* z-index: 1000; Asegura que la barra esté sobre otros elementos */
     border-radius: 20px;
+    transition: transform 0.5s ease, top 0.5s ease; /* Transición suave */
+    transform: translateY(30px); /* Desplazamiento inicial hacia abajo */
+}
+
+.navbar.sticky {
+    transform: translateY(0); /* Se alinea al top cuando es sticky */
 }
 
 .navbar nav a {
+    font-family: 'Cocogoose Classic Trial';
+    font-size: 20px;
     margin: 0 15px;
     text-decoration: none;
-    color: #0044cc;
-    font-weight: bold;
+    color: #082EB7;
+    font-weight: 200;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline white; /* Se subraya al pasar el cursor */
 }
 
 .cta-button {
@@ -39,7 +51,7 @@ body {
 }
 
 main {
-    margin-top: 80px; /* Añade un margen superior para evitar que el contenido quede debajo del menú */
+    margin-top: 0px; /* Añade un margen superior para evitar que el contenido quede debajo del menú */
 }
 
 
@@ -48,7 +60,7 @@ main {
     align-items: center;
     background-color: #0044cc;
     color: rgb(37, 35, 35);
-    padding: 100%;
+    padding: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
